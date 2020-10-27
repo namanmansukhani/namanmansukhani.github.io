@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+
+    <!-- Add this CSS to prevent default styles inherited from browsers -->
+    <link rel="stylesheet" href="./css/minireset.min.css" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik|Karla"
+      rel="stylesheet"
+    />
+    <script defer src="./js/main.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"
+    ></script>
+
+    <title>Index</title>
+  </head>
+
+  <noscript>
+    <style type="text/css">
+      .wallpaper {
+        animation-name: zoomOut;
+      }
+
+      .picture {
+        animation-name: dropIn;
+      }
+    </style>
+  </noscript>
+  <body>
+    <div id="wallpaper" class="wallpaper" data-image="images/austria.jpg"></div>
+
+    <!--
+        Why use `srcset=".. 1x, .. 2x"?
+        1. Different devices have different pixel ratios (Retina/non-Retina 😂)
+        2. Display highest def image (browser'll use it depend on your pixel ratio)
+     -->
+    <div class="content">
+      <aside class="side">
+        <figure id="picture" class="picture">
+          <div class="picture-shadow"></div>
+          <img
+            id="pictureImage"
+            class="picture-image"
+            src="images/naman.jpg"
+            alt="My photo"
+            width="320"
+            height="320"
+          />
+        </figure>
+      </aside>
+
+      <main class="about">
+        <h1 class="name">
+          Naman Mansukhani
+        </h1>
+        <p class="job">
+          Senior at Delhi Public School R.K. Puram
+        </p>
+        <hr class="hr" />
+
+        <div class="description">
+          <p>
+            Hi! I am a programmer from New Delhi who loves anime.
+          </p>
+        </div>
+
+        <div class="contact">
+          <a href="about.html" class="button">
+            <!-- <a href="javascript:void(0)" class="button">-->
+              ABOUT
+            </a>
+          <a href="cv/resume.pdf" class="button">
+            CV
+          </a>
+          <a href="mailto:naman.mansukh@gmail.com" class="button">
+            <!-- <a href="javascript:void(0)" class="button">-->
+              CONTACT
+          </a>
+        </div>
+
+        <ul class="social">
+          <!--<li>
+            <a>
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          -->
+          <li>
+            <a href = "https://github.com/namanmansukhani">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href = "https://www.linkedin.com/in/namanmansukhani">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href = "https://www.linkedin.com/in/namanmansukhani">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href = "https://www.linkedin.com/in/namanmansukhani">
+              <i class="fab fa-codeforces"></i>
+            </a>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>
