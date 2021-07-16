@@ -1,2 +1,1 @@
-### Why
-- First real git project
+This is my personal website!
