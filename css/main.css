@@ -4,7 +4,7 @@ html {
   /* Acts as a fallback if the `background-image` doesn't load */
   background-color: #f0e6e0;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
-  background-image: linear-gradient(to bottom right, #180cac, #f0e6e0);
+  background-image: linear-gradient(to bottom right, #594fcb, #f0e6e0);
 
   font-family: "Karla", Verdana, sans-serif;
   font-size: 16px;
