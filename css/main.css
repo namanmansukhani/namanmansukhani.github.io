@@ -97,6 +97,12 @@ a {
     padding: 2%;
     margin: auto;
     text-align: center;
+
+    /* animation */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+    vertical-align: middle;
     /* flex:1; */
     /* height: 20rem; */
     /* flex-direction: column; */
@@ -104,10 +110,25 @@ a {
   
   }
   .credits a {
+    font-size: 16px;
     color: currentColor; /* use the `color` values provided by `html` (in our case!) */
     cursor: pointer;
     text-decoration: underline;
+
+    /* animation */
+    transition-property: font-size;
+    transition-duration: 300ms;
     /* flex-direction: column; */
+  }
+  
+  .credits a:hover {
+    color: #473eb3; /* use the `color` values provided by `html` (in our case!) */
+    font-weight:bold;
+    text-decoration: underline;
+
+    /* animation  */
+    font-size: 17px;
+    /* padding: 2% - 1px; */
   }
 }
 
