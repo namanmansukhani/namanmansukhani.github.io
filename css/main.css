@@ -1,3 +1,7 @@
+:root {
+  /* --main-theme-color: #8baf16; */
+  --main-theme-color: #2f23b1;
+}
 html {
   color: #fff;
 
