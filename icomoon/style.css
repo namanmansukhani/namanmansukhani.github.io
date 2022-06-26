@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?cgay6b');
-  src:  url('fonts/icomoon.eot?cgay6b#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?cgay6b') format('truetype'),
-    url('fonts/icomoon.woff?cgay6b') format('woff'),
-    url('fonts/icomoon.svg?cgay6b#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?l7bu21');
+  src:  url('fonts/icomoon.eot?l7bu21#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?l7bu21') format('truetype'),
+    url('fonts/icomoon.woff?l7bu21') format('woff'),
+    url('fonts/icomoon.svg?l7bu21#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,4 +27,5 @@
 
 .icon-codeforces:before {
   content: "\e900";
+  color: #fff;
 }
