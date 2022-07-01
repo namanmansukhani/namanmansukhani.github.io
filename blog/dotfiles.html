@@ -8,7 +8,7 @@ lang="en">
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans: ital, wght@0,400;0,600; 1,400; 1, 600&display=swap" rel="stylesheet">
-<title>Naman's Blog</title>
+<title>My Dotfiles &mdash; Naman's Blog</title>
 </head>
 <body>
 <nav class="menu">
@@ -25,7 +25,22 @@ lang="en">
 </div>
 </nav>
 <article>
+<h1 id="my-dotfiles">My Dotfiles</h1>
 
+<p>Ever found yourself with unfamiliar tmux keybinds on a new machine? This is a repository for convenient storage and installation of my dotfiles.</p>
+
+<h2 id="my-setup">My setup</h2>
+
+<p>While setting up my dotfiles, I created a new directory <code>~&#47;dotfiles&#47;</code>, where I stored my config files. Here, I created a hard link between the config files in <code>~&#47;dotfiles&#47;</code> and the ones in <code>~&#47;</code>. The installation script does just this.</p>
+
+<h2 id="installation">Installation</h2>
+
+<pre><code class="language-bash">git clone https:&#47;&#47;github.com&#47;namanmansukhani&#47;dotfiles.git
+cd ~&#47;dotfiles
+.&#47;install.sh
+</code></pre>
+
+<p>This creates a hard link between the config files in the <code>dotfiles</code> directory, and the ones in the home directory, so that changes are propagated to the ones in <code>~&#47;</code>.</p>
 </article>
 <footer>
 Created with a <a href="src/ssg5">slightly modified</a> version of <a href="https://notthebe.ee/src/ssg5">ssg</a> </footer>

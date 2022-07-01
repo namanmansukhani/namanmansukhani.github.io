@@ -1,0 +1,16 @@
+<h1 id="my-dotfiles">My Dotfiles</h1>
+
+<p>Ever found yourself with unfamiliar tmux keybinds on a new machine? This is a repository for convenient storage and installation of my dotfiles.</p>
+
+<h2 id="my-setup">My setup</h2>
+
+<p>While setting up my dotfiles, I created a new directory <code>~&#47;dotfiles&#47;</code>, where I stored my config files. Here, I created a hard link between the config files in <code>~&#47;dotfiles&#47;</code> and the ones in <code>~&#47;</code>. The installation script does just this.</p>
+
+<h2 id="installation">Installation</h2>
+
+<pre><code class="language-bash">git clone https:&#47;&#47;github.com&#47;namanmansukhani&#47;dotfiles.git
+cd ~&#47;dotfiles
+.&#47;install.sh
+</code></pre>
+
+<p>This creates a hard link between the config files in the <code>dotfiles</code> directory, and the ones in the home directory, so that changes are propagated to the ones in <code>~&#47;</code>.</p>
