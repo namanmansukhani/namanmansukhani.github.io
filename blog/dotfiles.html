@@ -8,7 +8,7 @@ lang="en">
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans: ital, wght@0,400;0,600; 1,400; 1, 600&display=swap" rel="stylesheet">
-<title>My Dotfiles &mdash; Naman's Blog</title>
+<title>Storing my dotfiles on Github &mdash; Naman's Blog</title>
 </head>
 <body>
 <nav class="menu">
@@ -25,24 +25,33 @@ lang="en">
 </div>
 </nav>
 <article>
-<h1 id="my-dotfiles">My Dotfiles</h1>
+<h1 id="storing-my-dotfiles-on-github">Storing my dotfiles on Github</h1>
 
-<p>Ever found yourself with unfamiliar tmux keybinds on a new machine? This is a repository for convenient storage and installation of my dotfiles.</p>
+<p>Whenever I setup a new server or changed my machine, moving dotfiles was a hassle. So I decided to archive them on github.</p>
 
 <h2 id="my-setup">My setup</h2>
 
-<p>While setting up my dotfiles, I created a new directory <code>~&#47;dotfiles&#47;</code>, where I stored my config files. Here, I created a hard link between the config files in <code>~&#47;dotfiles&#47;</code> and the ones in <code>~&#47;</code>. The installation script does just this.</p>
+<p>I created a new directory <code>~&#47;dotfiLes&#47;</code>, and I stored my dotfiles here. Then, I created a hard link between the files here and the files in <code>~&#47;</code>. So, whenever I make changes to the files and pull those changes from Github, the changes are propagated to the dotfiles in <code>~&#47;</code>.</p>
+
+<pre><code class="language-bash">#!&#47;usr&#47;bin&#47;env bash
+for file in .vimrc .zshrc .tmux.conf .bashrc
+do
+    ln -f ~&#47;dotfiles&#47;$file ~&#47;$file
+done
+</code></pre>
 
 <h2 id="installation">Installation</h2>
+
+<p>Simply clone the repo and run the <code>install.sh</code> script like so:</p>
 
 <pre><code class="language-bash">git clone https:&#47;&#47;github.com&#47;namanmansukhani&#47;dotfiles.git
 cd ~&#47;dotfiles
 .&#47;install.sh
 </code></pre>
 
-<p>This creates a hard link between the config files in the <code>dotfiles</code> directory, and the ones in the home directory, so that changes are propagated to the ones in <code>~&#47;</code>.</p>
+<p>Now, all the dotfiles are present and can be easily moved betweeen machines!</p>
 </article>
 <footer>
-Created with a <a href="src/ssg5">slightly modified</a> version of <a href="https://notthebe.ee/src/ssg5">ssg</a> </footer>
+Naman Mansukani. Inspired by <a href="src/ssg5"> this video</a>.</footer>
 </body>
 </html>
