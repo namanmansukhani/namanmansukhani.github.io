@@ -6,7 +6,7 @@ lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans: ital, wght@0,400;0,600; 1,400; 1, 600&display=swap" rel="stylesheet">
 <title>Storing my dotfiles on Github &mdash; Naman's Blog</title>
 </head>
@@ -14,7 +14,7 @@ lang="en">
 <nav class="menu">
 <div class="nav-left">
 <ul>
-<li><a href="index.html"><img class="logo" src="favicon.png" alt="">Naman's Blog</a></li>
+<li><a href="../"><img class="logo" src="favicon.png" alt="">Naman's Blog</a></li>
 </ul>
 </div>
 <div class="nav-right">
@@ -31,7 +31,7 @@ lang="en">
 
 <h2 id="my-setup">My setup</h2>
 
-<p>I created a new directory <code>~&#47;dotfiLes&#47;</code>, and I stored my dotfiles here. Then, I created a hard link between the files here and the files in <code>~&#47;</code>. So, whenever I make changes to the files and pull those changes from Github, the changes are propagated to the dotfiles in <code>~&#47;</code>.</p>
+<p>I created a new directory <code>~&#47;dotfiles&#47;</code>, and I stored my dotfiles here. Then, I created a hard link between the files here and the files in <code>~&#47;</code>. So, whenever I make changes to the files and pull those changes from Github, the changes are propagated to the dotfiles in <code>~&#47;</code>.</p>
 
 <pre><code class="language-bash">#!&#47;usr&#47;bin&#47;env bash
 for file in .vimrc .zshrc .tmux.conf .bashrc
@@ -52,6 +52,6 @@ cd ~&#47;dotfiles
 <p>Now, all the dotfiles are present and can be easily moved betweeen machines!</p>
 </article>
 <footer>
-Naman Mansukani. Inspired by <a href="src/ssg5"> this video</a>.</footer>
+Naman Mansukani. Inspired by <a href="https://www.youtube.com/watch?v=N_ttw2Dihn8"> this video</a>.</footer>
 </body>
 </html>

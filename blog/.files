@@ -1,5 +1,3 @@
 ./dotfiles.html
-./index.md
-./style.css
-./dotfiles.md
+./build_blog.py
 ./index.html
