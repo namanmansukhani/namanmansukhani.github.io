@@ -40,6 +40,20 @@ body {
 	background: var(--bg);
 }
 
+/* Trick */
+body{ height: calc(100vh - 3em)}
+
+
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+footer{
+  margin-top:auto;
+  text-align: center;
+}
+
 a {
 	color: var(--link);
 	text-decoration: none;
