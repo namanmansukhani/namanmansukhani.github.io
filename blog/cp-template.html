@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html
+lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans: ital, wght@0,400;0,600; 1,400; 1, 600&display=swap" rel="stylesheet">
+<title>A great started C++ competitive programming template &mdash; Naman's Blog</title>
+</head>
+<body>
+<nav class="menu">
+<div class="nav-left">
+<ul>
+<li><a href="../"><img class="logo" src="favicon.png" alt="">Naman's Blog</a></li>
+</ul>
+</div>
+<div class="nav-right">
+<ul>
+<li><a href="https://github.com/namanmansukhani">github</a></li>
+<li><a href="mailto:nmansukh@andrew.cmu.edu">contact</a></li>
+</ul>
+</div>
+</nav>
+<article>
+<h1 id="a-great-started-c-competitive-programming-template">A great started C++ competitive programming template</h1>
+
+<p>A good template for competitve programming can not just cut down on coding time for problems, it can also greatly reduce execution time. I&#8217;m going to walk you through a competitive programming template. It can be found on my <a href="https://github.com/namanmansukhani/competitive-programming-template">Github</a>.</p>
+
+<h2 id="commands-to-quickly-create-and-run-files">Commands to quickly create and run files</h2>
+
+<p>Script <code>run</code> compiles a file with g++, and runs the created executable <code>a.out</code>, which takes input from <code>input.txt</code>.</p>
+
+<p><code>.&#47;run file_name</code></p>
+
+<p>Here, <code>run</code> calls the <code>make</code> command, which ensures that the file is not compiled unnecessarily. The generated executable is only run if the <code>make</code> command was successful.</p>
+
+<p>Script <code>new</code> copies the template into a new file.</p>
+
+<p><code>.&#47;new file_name</code></p>
+
+<p>Here, <code>new</code> creates a new file <code>file_name</code> with the contents of <code>template.cpp</code></p>
+
+<h2 id="explaining-the-template">Explaining the template</h2>
+
+<p>The first step is to use type <code>int</code> as type <code>long long</code>. In order to make this work, we need to first change <code>int main()</code> to <code>signed main()</code> since the type of the <code>main</code> function cannot be <code>long long</code>.</p>
+
+<p>Then, we add these lines for conveniently writing loops.</p>
+
+<pre><code class="language-cpp">#define rep(i,n) for (int i = 0;i &#60; n;i++)
+#define REP(i,k,n) for (int i = k;i &#60; n;i++)
+</code></pre>
+
+<p>So, something like <code>for (int i=0;i&#60;n;i++)</code> becomes <code>rep(i,n)</code>, which is more concise.</p>
+
+<p>We also add - 
+<code>cpp
+ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+</code></p>
+
+<p>at the start of the main function.</p>
+
+<p>This makes sure that C I&#47;O functions like <code>printf</code> and <code>scanf</code> don&#8217;t have to be synced with the C++ I&#47;O functions like <code>cin</code> and <code>cout</code>. This boosts I&#47;O performance for <code>cin</code> and <code>cout</code>. It is honestly surprising to see the difference that this optimization makes.</p>
+
+<h2 id="more-content-coming-soon">More content coming soon</h2>
+</article>
+<footer>
+Naman Mansukani. Inspired by <a href="https://www.youtube.com/watch?v=N_ttw2Dihn8"> this video</a>.</footer>
+</body>
+</html>
