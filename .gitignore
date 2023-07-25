@@ -1,3 +1,4 @@
+lowdown/
 
 # Anything else
 **/media/
@@ -55,3 +56,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
