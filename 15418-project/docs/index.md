@@ -25,7 +25,8 @@ Simulating Realistic Network Conditions: We want to add realistic randomness for
 
 ## RESOURCES
 We will be starting the codebase from scratch. We will implement the trading engine in C++, and the clients in Python. We will use existing Python libraries for sending requests to the C++ server, along with network tools to simulate packet drops and adding randomness in latency.
-GOALS AND DELIVERABLES
+
+## GOALS AND DELIVERABLES
 
 ### Plan to achieve:
 Implement a trade matching engine.
