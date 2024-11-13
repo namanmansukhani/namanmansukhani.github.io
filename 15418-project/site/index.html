@@ -53,16 +53,43 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#commands" class="nav-link">Commands</a>
+            <li class="nav-item" data-bs-level="2"><a href="#title" class="nav-link">TITLE</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#url" class="nav-link">URL:</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#summary" class="nav-link">SUMMARY</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#background" class="nav-link">BACKGROUND</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#the-challenge" class="nav-link">THE CHALLENGE</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#resources" class="nav-link">RESOURCES</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#platform-choice" class="nav-link">PLATFORM CHOICE</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#schedule" class="nav-link">SCHEDULE</a>
+              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -70,57 +97,41 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
-<p>TITLE
-Parallel Order Matching Engine
-Team Members: Naman Mansukhani, Vincent Lin 
-URL:
-https://namanmansukhani.github.io/15418-project/site/ 
-Project Web Page: 
-SUMMARY
-We are going to implement a trade matching engine, which involves implementing data structures for storing and matching orders, along with implementing a framework for interacting with the clients through TCP requests.
-We will also implement simulated clients that keep sending orders to our matching engine.
-BACKGROUND
-A stock exchange has to match incoming orders from different entities interacting in a market. This is typically done through a price-time priority matching. Our goal is to maximize the throughput of the matching engine by:</p>
+<h2 id="title">TITLE</h2>
+<p>Parallel Order Matching Engine
+Team Members: Naman Mansukhani, Vincent Lin </p>
+<h2 id="url">URL:</h2>
+<p>https://namanmansukhani.github.io/15418-project/site/ </p>
+<h2 id="summary">SUMMARY</h2>
+<p>We are going to implement a trade matching engine, which involves implementing data structures for storing and matching orders, along with implementing a framework for interacting with the clients through TCP requests.
+We will also implement simulated clients that keep sending orders to our matching engine.</p>
+<h2 id="background">BACKGROUND</h2>
+<p>A stock exchange has to match incoming orders from different entities interacting in a market. This is typically done through a price-time priority matching. Our goal is to maximize the throughput of the matching engine by:</p>
 <p>Optimizing data structure performance
 Optimizing network throughput using techniques such asynchronous request processing</p>
-<p>It might turn out that the network is too slow to actually test the throughput of the data structures. In this case, we will just simulate clients using threads on the same machines that send in requests after certain intervals.
-THE CHALLENGE
-The challenges in this project include:
+<p>It might turn out that the network is too slow to actually test the throughput of the data structures. In this case, we will just simulate clients using threads on the same machines that send in requests after certain intervals.</p>
+<h2 id="the-challenge">THE CHALLENGE</h2>
+<p>The challenges in this project include:
 Correctness: A stock market needs to be fair and correct. The first challenge for this is implementing the lock free data structures.
 Throughput: This project is going to involve researching about techniques to maximize
-Simulating Realistic Network Conditions: We want to add realistic randomness for packet drops and latency. This would involve exploring relevant networking libraries.
-RESOURCES
-We will be starting the codebase from scratch. We will implement the trading engine in C++, and the clients in Python. We will use existing Python libraries for sending requests to the C++ server, along with network tools to simulate packet drops and adding randomness in latency.
+Simulating Realistic Network Conditions: We want to add realistic randomness for packet drops and latency. This would involve exploring relevant networking libraries.</p>
+<h2 id="resources">RESOURCES</h2>
+<p>We will be starting the codebase from scratch. We will implement the trading engine in C++, and the clients in Python. We will use existing Python libraries for sending requests to the C++ server, along with network tools to simulate packet drops and adding randomness in latency.
 GOALS AND DELIVERABLES</p>
-<p>Plan to achieve:
-Implement a trade matching engine.
+<h3 id="plan-to-achieve">Plan to achieve:</h3>
+<p>Implement a trade matching engine.
 Implement lock free data structures/ fine-grained locking to optimize the matching engine.
 Obtain a 5x speedup running on 16 threads.</p>
-<p>Hope to achieve:
-Add realistic clients communicating through the network.
+<h3 id="hope-to-achieve">Hope to achieve:</h3>
+<p>Add realistic clients communicating through the network.
 Add optimizations to the network side of things
 Obtain a 50x improvement in network throughput over the sequential version, since network packets are small.
 We plan to show speedup graphs for different techniques that we apply to this problem.
 We hope to learn more about implementing lock-free data structures and how performance sensitive applications optimize network performance.
-We hope to scale the matching engine to 10000 orders matched per second.
-PLATFORM CHOICE
-We will code the trade matching engine in C++ since this is a very performance critical application. We plan to run this on CPUs since we expect the code flow to be divergent and not suited for SIMD/GPU programming. We plan on testing our code on PSC nodes since we expect it to be easier to setup networking on multiple PSC nodes.
-SCHEDULE</p>
+We hope to scale the matching engine to 10000 orders matched per second.</p>
+<h2 id="platform-choice">PLATFORM CHOICE</h2>
+<p>We will code the trade matching engine in C++ since this is a very performance critical application. We plan to run this on CPUs since we expect the code flow to be divergent and not suited for SIMD/GPU programming. We plan on testing our code on PSC nodes since we expect it to be easier to setup networking on multiple PSC nodes.</p>
+<h2 id="schedule">SCHEDULE</h2>
 <p>Week 1:</p>
 <p>Research topic background and finalize specific implementation details and design choices. Implement a sequential version of the order matching engine.</p>
 <p>Week 2:</p>
@@ -211,5 +222,5 @@ Focus on completing the writeup and poster demo for the project.</p></div>
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2024-11-13 05:09:37.769704+00:00
+Build Date UTC : 2024-11-13 05:12:35.519200+00:00
 -->
