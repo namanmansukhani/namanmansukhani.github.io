@@ -11,6 +11,8 @@ __pycache__
 .cache
 .ipynb_checkpoints
 
+.venv/
+
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
