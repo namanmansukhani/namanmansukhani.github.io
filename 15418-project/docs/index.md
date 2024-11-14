@@ -1,4 +1,4 @@
-## PARALLEL ORDER MATCHING ENGINE
+# PARALLEL ORDER MATCHING ENGINE
 
 Team Members: Naman Mansukhani, Vincent Lin 
 
