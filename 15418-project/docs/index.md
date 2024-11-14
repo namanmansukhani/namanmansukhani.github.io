@@ -1,5 +1,5 @@
-## TITLE
-Parallel Order Matching Engine
+## PARALLEL ORDER MATCHING ENGINE
+
 Team Members: Naman Mansukhani, Vincent Lin 
 
 ## URL:
