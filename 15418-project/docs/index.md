@@ -2,7 +2,7 @@
 
 Team Members: Naman Mansukhani, Vincent Lin 
 
-## URL:
+## URL
 https://namanmansukhani.github.io/15418-project/site/ 
 
 ## SUMMARY
